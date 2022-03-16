@@ -12,6 +12,16 @@ $card-border-radius: none;
 
 $modal-content-bg: rgba(50, 9, 104, 0.897);
 
+$pagination-color: rgb(255, 255, 255);
+
+$pagination-active-color: #000;
+$pagination-active-bg: rgb(218, 190, 33);
+
+$pagination-bg: #000;
+
+$pagination-hover-color: rgb(0, 0, 0);
+$pagination-hover-bg: rgb(255, 217, 0);
+
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 body {
