@@ -1,0 +1,31 @@
+.banner {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('https://hbomax-images.warnermediacdn.com/2021-12/hp-reu-hero.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=2800');
+	background-size: cover;
+	background-position: right;
+	min-height: 95vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	&-text {
+		padding: 10px;
+		font-size: 1.3rem;
+		h1 {
+			font-size: 3rem;
+		}
+	}
+}
+@media (min-width: 720px) {
+	.banner {
+		justify-content: start;
+		&-text {
+			max-width: 800px;
+			font-size: 3rem;
+			h1 {
+				font-size: 4rem;
+			}
+		}
+	}
+}

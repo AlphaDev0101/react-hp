@@ -1,0 +1,31 @@
+.prediccion {
+	background: #050799;
+	background: -webkit-radial-gradient(circle, #03045a7c 0%, #35054e7e 100%),
+		radial-gradient(circle, #0506507c 0%, #32054b7e 100%), url('/img/adivinacion.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 30px 0;
+	h2 {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	&-grid {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 40px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
+.button {
+	padding: 7px 15px;
+	font-size: 2rem;
+	border: none;
+	border: 5px double gold;
+	background-color: transparent;
+	color: gold;
+}

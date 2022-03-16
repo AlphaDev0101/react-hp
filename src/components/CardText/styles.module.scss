@@ -1,0 +1,24 @@
+.frases-card {
+	.text {
+		color: black;
+		font-size: 1rem;
+	}
+	.body {
+		position: relative;
+		padding: 10px 10px;
+		text-align: center;
+		background-color: #fff;
+
+		border-left: 3px ridge rgb(161, 137, 0);
+
+		&::before {
+			content: '';
+			width: 70%;
+			height: 3px;
+			background-color: rgb(161, 137, 0);
+			position: absolute;
+			top: 3px;
+			right: 3px;
+		}
+	}
+}

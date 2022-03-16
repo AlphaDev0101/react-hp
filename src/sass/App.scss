@@ -1,0 +1,25 @@
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1200px,
+);
+$card-bg: none;
+$card-border-width: none;
+$card-border-color: none;
+$card-border-radius: none;
+
+$modal-content-bg: rgba(50, 9, 104, 0.897);
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+body {
+	background-color: black;
+	color: #fff;
+}
+#root {
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}

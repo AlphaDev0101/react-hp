@@ -1,0 +1,15 @@
+.skew {
+	background-color: #000;
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	&-top {
+		top: 0;
+		clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+	}
+	&-bot {
+		bottom: 0;
+		clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+	}
+}

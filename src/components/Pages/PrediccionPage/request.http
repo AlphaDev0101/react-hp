@@ -1,0 +1,9 @@
+@sign = cancer
+@day = tomorrow
+@url= https://aztro.sameerkumar.website
+### Obtener Oroscopo
+POST {{url}}
+    ?sign={{sign}}
+    &day={{day}}
+
+
