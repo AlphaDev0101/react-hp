@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
+import { URL_API_JSON_SERVER } from '../config';
 
 export const useFetch = (uri: string, errMenssage: string = 'Ocurrio un error al trar datos') => {
 	const [fetchData, setFetchData] = useState<[]>([]);
 	const [error, setError] = useState<string>('');
 	const [loading, setLoading] = useState<boolean>(false);
 
-	const url = 'https://harry-potter-json-server.herokuapp.com';
 	useEffect(() => {
 		setLoading(true);
 		const fetchLibros = async () => {
 			try {
-				const res = await fetch(url + uri);
+				const res = await fetch(URL_API_JSON_SERVER + uri);
 				if (!res.ok) {
 					throw new Error(`Http status ${res.status}`);
 				}
